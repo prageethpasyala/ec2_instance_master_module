@@ -19,9 +19,9 @@ variable "number_of_instances" {
   default = 1
 }
 
-variable "user_data" {
-  description = "The path to a file with user_data for the instances"
-}
+# variable "user_data" {
+#   description = "The path to a file with user_data for the instances"
+# }
 
 variable "tags" {
   default = {
