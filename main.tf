@@ -13,7 +13,7 @@ resource "aws_instance" "ec2_instance" {
     instance_type = "${var.instance_type}"
     
     tags {
-        created_by = "${lookup(var.tags,"created_by")}"
+        //created_by = "${lookup(var.tags,"created_by")}"
         // Takes the instance_name input variable and adds
         //  the count.index to the name., e.g.
         //  "example-host-web-1"
