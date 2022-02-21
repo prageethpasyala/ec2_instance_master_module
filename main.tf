@@ -15,7 +15,7 @@ resource "aws_instance" "ec2_instance" {
     vpc_security_group_ids = "${var.vpc_security_group_ids}"
     
     tags = {
-    Name = "${var.instance_name}-${count.index}"
+    Name = "${var.instance_name}-${count.index+1}"
     Terraform   = "true"
     Environment = "dev"
   }
