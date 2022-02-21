@@ -12,7 +12,7 @@ resource "aws_instance" "ec2_instance" {
     count = "${var.number_of_instances}"
     subnet_id = "${var.subnet_id}"
     instance_type = "${var.instance_type}"
-    vpc_security_group_ids = "${var.sg_id}"
+    vpc_security_group_ids = "${var.vpc_security_group_ids}"
     tags {
         //created_by = "${lookup(var.tags,"created_by")}"
         // Takes the instance_name input variable and adds
