@@ -19,7 +19,7 @@ variable "number_of_instances" {
   default = 1
 }
 
-
+variable "vpc_security_group_ids" {}
 
 variable "tags" {
   default = {
